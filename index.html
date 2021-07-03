@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./question.js" type="module"></script>
+    <script src="./script.js" defer type="module"></script>
+  </head>
+  <body>
+    <main class="homepage">
+      <h1 class="title">SIMPLE QUIZ APP</h1>
+      <p class="topic-text">TOPIC: <em class="topic">Maths</em></p>
+      <button class="start-quiz">START QUIZ</button>
+    </main>
+    <section class="question-page">
+      <div class="question-block">
+        <h4 class="question">What is 1+1</h4>
+        <div class="options">
+          <div class="option">
+            <input
+              type="radio"
+              name="option"
+              id="option1"
+              class="option-radio"
+            />
+            <label for="option1" class="option-text">2</label>
+          </div>
+          <div class="option">
+            <input
+              type="radio"
+              name="option"
+              id="option2"
+              class="option-radio"
+            />
+            <label for="option2" class="option-text">0</label>
+          </div>
+          <div class="option">
+            <input
+              type="radio"
+              name="option"
+              id="option3"
+              class="option-radio"
+            />
+            <label for="option3" class="option-text">4</label>
+          </div>
+          <div class="option">
+            <input
+              type="radio"
+              name="option"
+              id="option4"
+              class="option-radio"
+            />
+            <label for="option4" class="option-text">1</label>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-block">
+        <button class="button prev">PREVIOUS</button>
+        <button class="button next">NEXT</button>
+      </div>
+    </section>
+    <section class="result-page">
+      <div class="result-block">
+        <h2 class="message">THANK YOU</h2>
+        <p class="score-text">SCORE: <em class="score">0</em>/10</p>
+        <button class="requiz">RE-QUIZ</button>
+      </div>
+    </section>
+  </body>
+</html>
